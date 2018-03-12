@@ -52,7 +52,7 @@ public class CalculatorController implements View.OnClickListener {
                 SetOperator(R.id.btn_multiplicera);
                 break;
             case R.id.btn_dot:
-                if(calculatorView.isInfoNotEmpty() && calculatorView.isResultNotInfinity()){
+                if(calculatorView.isInfoNotEmpty() && calculatorView.isResultNotInfinity() && calculatorView.IsResultNotContainingEquals()){
                     calculatorView.appendInfoString(".");
                 }
                 break;
