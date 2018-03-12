@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nackademin.frolund.fredrik.calculatorapplication.CalculatorApplication">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:textColor="@color/colorWhite"
+            android:background="@android:drawable/btn_default"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="@string/clear" />
+    <LinearLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/nine" />
+
+            <Button
+                android:id="@+id/btn_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/eight" />
+
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/seven" />
+
+            <Button
+                android:id="@+id/btn_dividera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/dividera" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:background="@android:drawable/btn_default"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/six" />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:background="@android:drawable/btn_default"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/five" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:background="@android:drawable/btn_default"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/four" />
+
+        <Button
+            android:id="@+id/btn_multiplicera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:background="@android:drawable/btn_default"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/multiplicera" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:background="@android:drawable/btn_default"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/three" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:background="@android:drawable/btn_default"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/two" />
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:background="@android:drawable/btn_default"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/one" />
+
+        <Button
+            android:id="@+id/btn_addera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:background="@android:drawable/btn_default"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/addera" />
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_dot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/dot" />
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:background="@android:drawable/btn_default"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/zero"/>
+            <Button
+                android:id="@+id/btn_i_lika_med"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/iLikaMed" />
+            <Button
+                android:id="@+id/btn_subbtrahera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/subbtrahera" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:layout_above="@id/main_layout">
+
+        <TextView
+            android:id="@+id/view_calculation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/view_calculation"
+            android:background="#e2e2e2"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/view_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/view_result"
+            android:gravity="end"
+            android:textSize="25sp"
+            android:background="@color/colorBlue"
+            android:layout_weight="2"
+            android:paddingRight="20dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
