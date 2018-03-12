@@ -34,14 +34,15 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/btn_9"
+                android:id="@+id/btn_7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorWhite"
                 android:background="@android:drawable/btn_default"
                 android:backgroundTint="@color/colorPrimary"
-                android:text="@string/nine" />
+                android:text="@string/seven" />
+
 
             <Button
                 android:id="@+id/btn_8"
@@ -54,14 +55,16 @@
                 android:text="@string/eight" />
 
             <Button
-                android:id="@+id/btn_7"
+                android:id="@+id/btn_9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorWhite"
                 android:background="@android:drawable/btn_default"
                 android:backgroundTint="@color/colorPrimary"
-                android:text="@string/seven" />
+                android:text="@string/nine" />
+
+
 
             <Button
                 android:id="@+id/btn_dividera"
@@ -79,15 +82,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/btn_6"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textColor="@color/colorWhite"
-            android:background="@android:drawable/btn_default"
-            android:backgroundTint="@color/colorPrimary"
-            android:text="@string/six" />
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/four" />
+
 
         <Button
             android:id="@+id/btn_5"
@@ -99,15 +103,15 @@
             android:backgroundTint="@color/colorPrimary"
             android:text="@string/five" />
 
-        <Button
-            android:id="@+id/btn_4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textColor="@color/colorWhite"
-            android:background="@android:drawable/btn_default"
-            android:backgroundTint="@color/colorPrimary"
-            android:text="@string/four" />
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/six" />
 
         <Button
             android:id="@+id/btn_multiplicera"
@@ -125,15 +129,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/btn_3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textColor="@color/colorWhite"
-            android:background="@android:drawable/btn_default"
-            android:backgroundTint="@color/colorPrimary"
-            android:text="@string/three" />
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/one" />
 
         <Button
             android:id="@+id/btn_2"
@@ -145,15 +149,16 @@
             android:backgroundTint="@color/colorPrimary"
             android:text="@string/two" />
 
-        <Button
-            android:id="@+id/btn_1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textColor="@color/colorWhite"
-            android:background="@android:drawable/btn_default"
-            android:backgroundTint="@color/colorPrimary"
-            android:text="@string/one" />
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/three" />
+
 
         <Button
             android:id="@+id/btn_addera"

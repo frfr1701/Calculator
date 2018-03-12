@@ -53,20 +53,30 @@ public class CalculatorView{
     public void clearInfo(){
         info.setText(null);
     }
+
     public void clearResult(){
         result.setText(null);
     }
+
     public boolean IsResultNotContainingEquals(){
         return !result.getText().toString().contains("=");
     }
+
     public boolean isInfoNotEmpty(){
         return info.getText().length() > 0;
     }
+
+
     public boolean isResultNotEmpty(){
         return result.getText().length() > 0;
     }
+
     public boolean isResultNotInfinity(){
-        return !result.getText().toString().equals("You can't divide by 0!");
+        return !getResultString().equals("You can't divide by 0!");
+    }
+
+    public boolean isLastCharOfIndexNotADot(){
+        return info.getText().charAt(info.getText().toString().length()-1) != '.';
     }
 
 }
