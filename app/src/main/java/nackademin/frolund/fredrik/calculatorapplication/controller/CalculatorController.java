@@ -69,8 +69,9 @@ public class CalculatorController implements View.OnClickListener {
             case R.id.btn_i_lika_med:
                 if(calculatorView.IsResultNotContainingEquals() && calculatorView.isInfoNotEmpty()) {
                     if(Double.isNaN(calculatorModel.getVal1()) && Double.isNaN(calculatorModel.getVal2())) {
-                        calculatorView.setResultText(String.format("%s=%s", calculatorView.getInfoString(), calculatorView.getInfoString()));
-                        calculatorView.clearInfo();
+                        calculatorModel.setVal1(Double.parseDouble(calculatorView.getInfoString()));
+                        calculatorView.setInfoText(isItAInteger(Double.toString(calculatorModel.getVal1())));
+                        calculatorView.setResultText(String.format("%s=%s", isItAInteger(Double.toString(calculatorModel.getVal1())), isItAInteger(Double.toString(calculatorModel.getVal1()))));
                     }else {
                         calculatorModel.calculatePreviousNumbers(calculatorView.getInfoString());
                         calculatorModel.setState(CalculatorModelState.DEFAULT);
@@ -78,8 +79,8 @@ public class CalculatorController implements View.OnClickListener {
                             calculatorView.setResultText(R.string.InfinityText);
                             calculatorView.clearInfo();
                         } else {
-                            calculatorView.setResultText(String.format("%s%s=%s", calculatorView.getResultString(), calculatorModel.getVal2(), calculatorModel.getVal1()));
-                            calculatorView.setInfoText(String.format("%s",calculatorModel.getVal1()));
+                            calculatorView.setResultText(String.format("%s%s=%s", calculatorView.getResultString(), isItAInteger(Double.toString(calculatorModel.getVal2())), isItAInteger(Double.toString(calculatorModel.getVal1()))));
+                            calculatorView.setInfoText(String.format("%s", isItAInteger(Double.toString(calculatorModel.getVal1()))));
                         }
                     }
                 }
@@ -96,23 +97,30 @@ public class CalculatorController implements View.OnClickListener {
             calculatorModel.calculatePreviousNumbers(calculatorView.getInfoString());
             switch(id){
                 case R.id.btn_multiplicera:
-                    calculatorView.setTextForOperator("*", calculatorModel.getVal1());
+                    calculatorView.setTextForOperator("*", isItAInteger(Double.toString(calculatorModel.getVal1())));
                     calculatorModel.setState(MULTIPLICATION);
                     break;
                 case R.id.btn_dividera:
-                    calculatorView.setTextForOperator("/", calculatorModel.getVal1());
+                    calculatorView.setTextForOperator("/", isItAInteger(Double.toString(calculatorModel.getVal1())));
                     calculatorModel.setState(DIVISION);
                     break;
                 case R.id.btn_addera:
-                    calculatorView.setTextForOperator("+", calculatorModel.getVal1());
+                    calculatorView.setTextForOperator("+", isItAInteger(Double.toString(calculatorModel.getVal1())));
                     calculatorModel.setState(ADDITION);
                     break;
                 case R.id.btn_subbtrahera:
-                    calculatorView.setTextForOperator("-", calculatorModel.getVal1());
+                    calculatorView.setTextForOperator("-", isItAInteger(Double.toString(calculatorModel.getVal1())));
                     calculatorModel.setState(SUBTRACTION);
                     break;
             }
 
+        }
+    }
+    private String isItAInteger(String value){
+        if(value.substring(value.length()-2).equals(".0") || value.substring(value.length()-1).equals(".")){
+            return Integer.toString((int)Double.parseDouble(value));
+        }else{
+            return value;
         }
     }
 }

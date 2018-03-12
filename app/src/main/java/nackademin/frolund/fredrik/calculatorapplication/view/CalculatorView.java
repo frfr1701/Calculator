@@ -46,7 +46,7 @@ public class CalculatorView{
         return result.getText().toString();
     }
 
-    public void setTextForOperator(String input, double value){
+    public void setTextForOperator(String input, String value){
         result.setText(String.format("%s%s", value, input));
         clearInfo();
     }
