@@ -44,6 +44,18 @@
                 android:text="@string/backspace"
                 android:background="@android:drawable/btn_default"
                 android:backgroundTint="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/btn_conventional"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/conventional"
+                android:textColor="@color/colorWhite" />
         </LinearLayout>
 
     <LinearLayout

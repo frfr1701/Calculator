@@ -58,6 +58,10 @@ public class CalculatorModel {
         this.val2 = val2;
     }
 
+    public void OppositeVal1(){
+        val1=-val1;
+    }
+
     public double getVal1() {
         return val1;
     }

@@ -18,6 +18,7 @@
     <string name="iLikaMed">=</string>
     <string name="view_result"></string>
     <string name="view_calculation"></string>
+    <string name="conventional">+/-</string>
     <string name="dot">.</string>
     <string name="InfinityText">You can\'t divide by 0!</string>
     <string name="backspace"><![CDATA[<=]]></string>

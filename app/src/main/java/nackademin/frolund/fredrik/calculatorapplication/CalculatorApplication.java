@@ -52,7 +52,8 @@ public class CalculatorApplication extends AppCompatActivity{
                 findViewById(R.id.btn_7), findViewById(R.id.btn_8), findViewById(R.id.btn_9), findViewById(R.id.btn_addera),
                 findViewById(R.id.btn_3), findViewById(R.id.btn_4), findViewById(R.id.btn_5), findViewById(R.id.btn_6),
                 findViewById(R.id.btn_subbtrahera), findViewById(R.id.btn_multiplicera), findViewById(R.id.btn_dividera),
-                findViewById(R.id.btn_i_lika_med), findViewById(R.id.btn_clear), findViewById(R.id.btn_dot), findViewById(R.id.btn_backspace));
+                findViewById(R.id.btn_i_lika_med), findViewById(R.id.btn_clear), findViewById(R.id.btn_dot),
+                findViewById(R.id.btn_backspace), findViewById(R.id.btn_conventional));
     }
    public List<TextView> getTextViews(){
         return Arrays.asList((TextView) findViewById(R.id.view_result),(TextView) findViewById(R.id.view_calculation));

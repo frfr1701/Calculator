@@ -58,7 +58,9 @@ public class CalculatorController implements View.OnClickListener {
                 }
                 break;
             case R.id.btn_clear:
-                if(calculatorView.isInfoNotEmpty() || calculatorView.isResultNotEmpty()){
+                if(calculatorView.isInfoNotEmpty() && calculatorView.IsResultNotContainingEquals()){
+                    calculatorView.clearInfo();
+                } else if(calculatorView.isResultNotEmpty()){
                     calculatorModel.setVal1(Double.NaN);
                     calculatorModel.setVal2(Double.NaN);
                     calculatorModel.setState(DEFAULT);
@@ -88,6 +90,22 @@ public class CalculatorController implements View.OnClickListener {
             case R.id.btn_backspace:
                 if(calculatorView.IsResultNotContainingEquals() && calculatorView.isInfoNotEmpty()){
                     calculatorView.setInfoText(calculatorView.getInfoString().substring(0,calculatorView.getInfoString().length()-1));
+                }
+                break;
+            case R.id.btn_conventional:
+                if(calculatorView.isInfoNotEmpty()) {
+                    if (calculatorView.IsResultNotContainingEquals()) {
+                        if(calculatorView.getInfoString().charAt(0) == '-'){
+                            calculatorView.setInfoText(calculatorView.getInfoString().substring(1));
+                            calculatorView.setResultText(calculatorView.getInfoString());
+                        }else{
+                         calculatorView.setInfoText("-" + calculatorView.getInfoString());
+                        }
+                    } else {
+                        calculatorModel.OppositeVal1();
+                        calculatorView.setInfoText(isItAInteger(Double.toString(calculatorModel.getVal1())));
+                        calculatorView.setResultText(isItAInteger(isItAInteger(Double.toString(calculatorModel.getVal1())) + "=" + isItAInteger(Double.toString(calculatorModel.getVal1()))));
+                    }
                 }
                 break;
         }
