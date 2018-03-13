@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,20 +9,43 @@
     <LinearLayout
         android:id="@+id/main_layout"
         android:layout_width="match_parent"
+        android:baselineAligned="false"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         >
 
-        <Button
-            android:id="@+id/btn_clear"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="4"
-            android:textColor="@color/colorWhite"
-            android:background="@android:drawable/btn_default"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:text="@string/clear" />
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_clear"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/clear"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btn_backspace"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:textColor="@color/colorWhite"
+                android:text="@string/backspace"
+                android:background="@android:drawable/btn_default"
+                android:backgroundTint="@color/colorPrimary" />
+        </LinearLayout>
+
     <LinearLayout
         android:id="@+id/grid_layout"
         android:layout_width="match_parent"
@@ -39,6 +63,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorWhite"
+                style="?android:buttonBarButtonStyle"
                 android:background="@android:drawable/btn_default"
                 android:backgroundTint="@color/colorPrimary"
                 android:text="@string/seven" />
@@ -50,6 +75,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorWhite"
+                style="?android:buttonBarButtonStyle"
                 android:background="@android:drawable/btn_default"
                 android:backgroundTint="@color/colorPrimary"
                 android:text="@string/eight" />
@@ -60,6 +86,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorWhite"
+                style="?android:buttonBarButtonStyle"
                 android:background="@android:drawable/btn_default"
                 android:backgroundTint="@color/colorPrimary"
                 android:text="@string/nine" />
@@ -72,6 +99,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorWhite"
+                style="?android:buttonBarButtonStyle"
                 android:background="@android:drawable/btn_default"
                 android:backgroundTint="@color/colorPrimary"
                 android:text="@string/dividera" />
@@ -88,6 +116,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorWhite"
+                style="?android:buttonBarButtonStyle"
                 android:background="@android:drawable/btn_default"
                 android:backgroundTint="@color/colorPrimary"
                 android:text="@string/four" />
@@ -99,6 +128,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="@color/colorWhite"
+            style="?android:buttonBarButtonStyle"
             android:background="@android:drawable/btn_default"
             android:backgroundTint="@color/colorPrimary"
             android:text="@string/five" />
@@ -109,6 +139,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorWhite"
+                style="?android:buttonBarButtonStyle"
                 android:background="@android:drawable/btn_default"
                 android:backgroundTint="@color/colorPrimary"
                 android:text="@string/six" />
@@ -119,6 +150,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="@color/colorWhite"
+            style="?android:buttonBarButtonStyle"
             android:background="@android:drawable/btn_default"
             android:backgroundTint="@color/colorPrimary"
             android:text="@string/multiplicera" />
@@ -135,6 +167,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorWhite"
+                style="?android:buttonBarButtonStyle"
                 android:background="@android:drawable/btn_default"
                 android:backgroundTint="@color/colorPrimary"
                 android:text="@string/one" />
@@ -145,6 +178,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="@color/colorWhite"
+            style="?android:buttonBarButtonStyle"
             android:background="@android:drawable/btn_default"
             android:backgroundTint="@color/colorPrimary"
             android:text="@string/two" />
@@ -155,6 +189,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorWhite"
+                style="?android:buttonBarButtonStyle"
                 android:background="@android:drawable/btn_default"
                 android:backgroundTint="@color/colorPrimary"
                 android:text="@string/three" />
@@ -166,6 +201,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="@color/colorWhite"
+            style="?android:buttonBarButtonStyle"
             android:background="@android:drawable/btn_default"
             android:backgroundTint="@color/colorPrimary"
             android:text="@string/addera" />
@@ -180,6 +216,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorWhite"
+                style="?android:buttonBarButtonStyle"
                 android:background="@android:drawable/btn_default"
                 android:backgroundTint="@color/colorPrimary"
                 android:text="@string/dot" />
@@ -189,6 +226,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textColor="@color/colorWhite"
+            style="?android:buttonBarButtonStyle"
             android:background="@android:drawable/btn_default"
             android:backgroundTint="@color/colorPrimary"
             android:text="@string/zero"/>
@@ -198,6 +236,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorWhite"
+                style="?android:buttonBarButtonStyle"
                 android:background="@android:drawable/btn_default"
                 android:backgroundTint="@color/colorPrimary"
                 android:text="@string/iLikaMed" />
@@ -207,6 +246,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textColor="@color/colorWhite"
+                style="?android:buttonBarButtonStyle"
                 android:background="@android:drawable/btn_default"
                 android:backgroundTint="@color/colorPrimary"
                 android:text="@string/subbtrahera" />

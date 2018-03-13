@@ -85,6 +85,11 @@ public class CalculatorController implements View.OnClickListener {
                     }
                 }
                 break;
+            case R.id.btn_backspace:
+                if(calculatorView.IsResultNotContainingEquals() && calculatorView.isInfoNotEmpty()){
+                    calculatorView.setInfoText(calculatorView.getInfoString().substring(0,calculatorView.getInfoString().length()-1));
+                }
+                break;
         }
     }
     private void AppendNumber(Button button){
